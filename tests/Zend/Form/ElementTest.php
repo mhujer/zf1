@@ -2244,6 +2244,32 @@ class Zend_Form_ElementTest extends PHPUnit_Framework_TestCase
         $messages = $this->element->getMessages();
         $this->assertEquals('Invalid value entered', array_shift($messages));
     }
+
+    public function testAddCssClass()
+    {
+        $el = new Zend_Form_Element('test');
+        $el->addCssClass('foo');
+        $el->addCssClass('foo');
+        $el->addCssClass('bar');
+        $el->addCssClass('baz');
+        $this->assertEquals('foo bar baz', $el->getAttrib('class'));
+    }
+
+    public function testRemoveCssClass()
+    {
+        $el = new Zend_Form_Element('test');
+        $el->setAttrib('class', 'foo bar baz');
+        $el->removeCssClass('bar');
+        $this->assertEquals('foo baz', $el->getAttrib('class'));
+    }
+
+    public function testRemoveNonexistingCssClass()
+    {
+        $el = new Zend_Form_Element('test');
+        $el->setAttrib('class', 'foo bar baz');
+        $el->removeCssClass('bat');
+        $this->assertEquals('foo bar baz', $el->getAttrib('class'));
+    }
 }
 
 class Zend_Form_ElementTest_Decorator extends Zend_Form_Decorator_Abstract
