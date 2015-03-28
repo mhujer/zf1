@@ -54,6 +54,11 @@ if ($_SERVER['TRAVIS_PHP_VERSION'] == '5.2') {
 $files = glob('{Zend/*/AllTests.php,Zend/*Test.php}', GLOB_BRACE);
 sort($files);
 
+$files = array(
+    'Zend/Amf/AllTests.php',
+    'Zend/XmlRpc/AllTests.php',
+);
+
 // we'll capture the result of each phpunit execution in this value, so we'll know if something broke
 $result = 0;
 
