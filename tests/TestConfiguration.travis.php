@@ -35,7 +35,7 @@
  /**
  * Zend_Auth_Adapter_DbTable tests
  */
-defined('TESTS_ZEND_AUTH_ADAPTER_DBTABLE_PDO_SQLITE_ENABLED') || define('TESTS_ZEND_AUTH_ADAPTER_DBTABLE_PDO_SQLITE_ENABLED', true);
+//defined('TESTS_ZEND_AUTH_ADAPTER_DBTABLE_PDO_SQLITE_ENABLED') || define('TESTS_ZEND_AUTH_ADAPTER_DBTABLE_PDO_SQLITE_ENABLED', true);
 
 /**
  * Zend_Cache
@@ -49,9 +49,9 @@ defined('TESTS_ZEND_AUTH_ADAPTER_DBTABLE_PDO_SQLITE_ENABLED') || define('TESTS_Z
  *                                          a memcached server has to be available
  * TESTS_ZEND_CACHE_XCACHE_ENABLED     => xcache extension has to be enabled
  */
-defined('TESTS_ZEND_CACHE_SQLITE_ENABLED') || define('TESTS_ZEND_CACHE_SQLITE_ENABLED', true);
+/*defined('TESTS_ZEND_CACHE_SQLITE_ENABLED') || define('TESTS_ZEND_CACHE_SQLITE_ENABLED', true);
 defined('TESTS_ZEND_CACHE_MEMCACHED_ENABLED') || define('TESTS_ZEND_CACHE_MEMCACHED_ENABLED', true);
-defined('TESTS_ZEND_CACHE_LIBMEMCACHED_ENABLED') || define('TESTS_ZEND_CACHE_LIBMEMCACHED_ENABLED', true);
+defined('TESTS_ZEND_CACHE_LIBMEMCACHED_ENABLED') || define('TESTS_ZEND_CACHE_LIBMEMCACHED_ENABLED', true);*/
 
 /**
  * Zend_Db_Adapter_Pdo_Mysql and Zend_Db_Adapter_Mysqli
@@ -60,18 +60,18 @@ defined('TESTS_ZEND_CACHE_LIBMEMCACHED_ENABLED') || define('TESTS_ZEND_CACHE_LIB
  * the native Mysqli adapters, but the other properties are shared between the
  * two MySQL-related Zend_Db adapters.
  */
-defined('TESTS_ZEND_DB_ADAPTER_PDO_MYSQL_ENABLED') || define('TESTS_ZEND_DB_ADAPTER_PDO_MYSQL_ENABLED',  true);
+/*defined('TESTS_ZEND_DB_ADAPTER_PDO_MYSQL_ENABLED') || define('TESTS_ZEND_DB_ADAPTER_PDO_MYSQL_ENABLED',  true);
 defined('TESTS_ZEND_DB_ADAPTER_MYSQLI_ENABLED') || define('TESTS_ZEND_DB_ADAPTER_MYSQLI_ENABLED',  true);
 defined('TESTS_ZEND_DB_ADAPTER_MYSQL_USERNAME') || define('TESTS_ZEND_DB_ADAPTER_MYSQL_USERNAME', 'travis');
 defined('TESTS_ZEND_DB_ADAPTER_MYSQL_PASSWORD') || define('TESTS_ZEND_DB_ADAPTER_MYSQL_PASSWORD', '');
-defined('TESTS_ZEND_DB_ADAPTER_MYSQL_DATABASE') || define('TESTS_ZEND_DB_ADAPTER_MYSQL_DATABASE', 'zftest');
+defined('TESTS_ZEND_DB_ADAPTER_MYSQL_DATABASE') || define('TESTS_ZEND_DB_ADAPTER_MYSQL_DATABASE', 'zftest');*/
 
 /**
  * Zend_Db_Adapter_Pdo_Sqlite
  *
  * Username and password are irrelevant for SQLite.
  */
-defined('TESTS_ZEND_DB_ADAPTER_PDO_SQLITE_ENABLED') || define('TESTS_ZEND_DB_ADAPTER_PDO_SQLITE_ENABLED',  true);
+//defined('TESTS_ZEND_DB_ADAPTER_PDO_SQLITE_ENABLED') || define('TESTS_ZEND_DB_ADAPTER_PDO_SQLITE_ENABLED',  true);
 
 /**
  * Zend_Db_Adapter_Pdo_Pgsql

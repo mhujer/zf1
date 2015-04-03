@@ -53,6 +53,7 @@ if ($_SERVER['TRAVIS_PHP_VERSION'] == '5.2') {
 // locate all tests
 $files = glob('{Zend/*/AllTests.php,Zend/*Test.php}', GLOB_BRACE);
 sort($files);
+$files = array('Zend/Db/AllTests.php');
 
 // we'll capture the result of each phpunit execution in this value, so we'll know if something broke
 $result = 0;
@@ -65,7 +66,7 @@ while(list(, $file)=each($files)) {
     }
 
     echo "Executing {$file}" . PHP_EOL;
-    system($PHPUNIT . ' --stderr -d memory_limit=-1 -d error_reporting=E_ALL\&E_STRICT -d display_errors=1 ' . escapeshellarg($file), $c_result);
+    system($PHPUNIT . ' --debug --verbose -d memory_limit=-1 -d error_reporting=E_ALL\&E_STRICT -d display_errors=1 ' . escapeshellarg($file), $c_result);
     echo PHP_EOL;
     echo "Finished executing {$file}" . PHP_EOL;
     
